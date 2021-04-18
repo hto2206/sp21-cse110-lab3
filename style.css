@@ -1,0 +1,194 @@
+/* The CSS style sheet*/
+
+body {
+    font-family: Courier New, arial, sans-serif;
+    margin: 2em;
+    color: white;
+    animation: bgcolor 10s infinite;
+  }
+
+@keyframes bgcolor {
+    0% {background-color: rgb(135,206,235)}
+    20% {background-color: hsl(120, 100%, 25%)}
+    40% {background-color: #FFA500}
+    60% {background-color: hsla(16, 100%, 66%,0.9)}
+    80% {background-color: rgba(147,112,216,1)}
+    100% {background-color: skyblue}
+  }
+
+
+
+li.nice{
+    background-color: gold;
+    color: red;
+}
+
+li.meh{
+    background-color: darkturquoise;
+}
+
+li.oof{
+    background-color: darkslategrey;
+}
+
+ul, ol {
+  border: 1px solid lightcyan;
+  padding-left: 5%;
+}
+
+
+ol li{
+    padding-left: 1%;
+    padding: 10px;
+}
+
+h2 ~ p{
+    color: lightgoldenrodyellow;
+    text-align: left;
+    font-size: 1.5rem;
+    display: inline;
+}
+
+h1{
+    color: salmon;
+    text-decoration: underline overline dotted yellowgreen;
+    text-align: center;
+    font-size: 40pt;
+    position: static;
+    margin: auto;
+}
+
+li{
+    color: lemonchiffon;
+    font-size: 5mm;
+}
+
+
+h2{ 
+    color: seashell;
+    text-decoration: underline overline wavy turquoise;
+    text-align: center;
+    font-family: 'Shadows Into Light';
+    font-size: 3vmax;
+}
+
+h4{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+video{
+    width: auto;
+    aspect-ratio: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20pt;
+    height: 10cm;
+    position: static;
+}
+
+audio{
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+a:hover {
+    background-color: black;
+    border: 1px solid;
+    border-color: white;
+  }
+
+a:active{
+    background-color: yellow;
+}
+
+li:active{
+    background-color: darkslategrey;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 20pt;
+    max-width: 50%;
+    min-width: 20%;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: orange;
+    flex-direction: row-reverse;
+    flex-basis:auto;
+  }
+  
+.flex > div {
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 75px;
+    font-size: 30px;
+    color: black;
+  }
+
+#never{
+    flex-grow: 0.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+      'Never Never Never Never Never Never'
+      'Gonna Gonna Let Let You You'
+      'Down Down Down Down Down Down';
+    grid-gap: 20px;
+    background-color: brown;
+    padding: 10px;
+    justify-items: stretch;
+  }
+  
+#nv { grid-area: Never; }
+#gn { grid-area: Gonna; }
+#lt { grid-area: Let; }
+#you { grid-area: You; }
+#dw { grid-area: Down; }
+
+  .grid > div {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+
+
+  @media (min-aspect-ratio: 8/5) {
+    p {
+      background: dimgray;
+    }
+  }
+  
+  @media (max-aspect-ratio: 3/2) {
+    p {
+      background: #9ff; 
+      color: black;
+    }
+  }
+  
+  @media (aspect-ratio: 1/1) {
+    p {
+      background: #f9a;
+      color:black;
+    }
+  }
