@@ -1,12 +1,5 @@
 /* The CSS style sheet*/
 
-body {
-    font-family: Courier New, arial, sans-serif;
-    margin: 2em;
-    color: white;
-    animation: bgcolor 10s infinite;
-  }
-
 @keyframes bgcolor {
     0% {background-color: rgb(135,206,235)}
     20% {background-color: hsl(120, 100%, 25%)}
@@ -77,6 +70,7 @@ h4{
     margin-bottom: 10px;
     font-size: 30px;
 }
+
 video{
     width: auto;
     aspect-ratio: inherit;
@@ -210,5 +204,5 @@ img{
   }
 
   #subscribe{
-      font-size: 20px;
+      font-size: 1.5em;
   }
