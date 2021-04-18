@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Journal, with memes</title>
     <link rel="icon" href="https://us.v-cdn.net/6030815/uploads/530V2OWF4T66/iconperks-decisivestrike.png">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -54,13 +57,13 @@
     <section>
       <h2 id="yesterday">Yesterday's Journal</h2>
       <h3>Things achieved</h3>
-      <ol>
-          <li>9 hours of sleep</li>
-          <li>Catch up to date with math lecture</li>
-          <li>Finish 1 math hw and 1 cse hw</li>
-          <li>Finish watching Tensei Slime</li>
+      <o>
+          <li class = "meh">9 hours of sleep</li>
+          <li class = "meh">Catch up to date with math lecture</li>
+          <li class = "meh">Finish 1 math hw and 1 cse hw</li>
+          <li class = "nice">Finish watching Tensei Slime</li>
       </ol>
-      <p>
+      <p attrib="_yester">
         A <b>very lazy</b> day indeed... Despite the fact that there are <strong>so much to do</strong> (In case you are wondering, yes that was "b" and "strong", since so much 
         things to do is of more importance than very lazy). 
         I basically watch anime, sleep in, and sit in front of the computer doing work. You know you are in academia when solving problems is a kind of lazy. 
@@ -78,10 +81,10 @@
       <h2 id="dayb4">The day before yesterday's Journal</h2>
       <h3>Things achieved</h3>
       <ol>
-          <li>Walked like 10km</li>
-          <li>Eat sushi</li>
-          <li>Buy the center cut of Parmigiano-Reggiano</li>
-          <li>Almost dead by blue cheese</li>
+          <li class = "nice">Walked like 10km</li>
+          <li class = "meh">Eat sushi</li>
+          <li class = "nice">Buy the center cut of Parmigiano-Reggiano</li>
+          <li class = "oof">Almost dead by blue cheese</li>
       </ol>
       <p>I forgot a lot of things already, so here's a goldfish meme</p>
       <img
@@ -109,6 +112,24 @@
         <textarea id="write" name="write" rows="8" cols="100">
             You may write here. Do math or code if you are hardcore. Do pixel art if you are extra hardcore.
          </textarea>
+
+         <h4> These are flex boxes. They flex (with the size of your browser).</h4>
+         <div class = "flex">
+          <div id="never">Never</div>
+          <div>Gonna</div>
+          <div>Give</div>  
+          <div>You</div>
+          <div>Up</div>
+        </div>
+        
+        <h4> These are grids. They won't g-rid of you though, unlike your cat when you are unworthy.</h4>
+        <div class="grid">
+          <div id="nv">Never</div>
+          <div id="gn">Gonna</div>
+          <div id="lt">Let</div>  
+          <div id="you">You</div>
+          <div id="dw">Down</div>
+        </div>
     </section>
 
     <section>
@@ -155,13 +176,13 @@
     </section>
     <hr />
     <footer>
-      <h6 id="subscribe">Please do not take this seriously, this is just a meme</h6>
+      <h6 id="subscribe" class="end">Please do not take this seriously, this is just a meme</h6>
       <form onsubmit="alert('Subscribed')">
         <input type="text" placeholder="Enter Your SSN (Don't)" />
-        <button>Subscibe to Pewdiepie</button>
+        <button class = "end">Subscibe to Pewdiepie</button>
       </form>
       <br />
-      <div>From Hien To by myself. I will put the <span>"span"</span> element here, and <span>here</span> just in case.</div>
+      <div class="end">From Hien To by myself. I will put the <span>"span"</span> element here, and <span>here</span> just in case.</div>
     </footer>
   </body>
 </html>
