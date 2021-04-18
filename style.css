@@ -192,3 +192,23 @@ img{
       color:black;
     }
   }
+
+  summary + img {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    width: 50%;
+} 
+
+ p[attrib]{
+      color: black;
+      background-color: white;
+  }
+
+  *.end{
+      background-color: red;
+  }
+
+  #subscribe{
+      font-size: 20px;
+  }
